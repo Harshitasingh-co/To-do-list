@@ -1,0 +1,95 @@
+body {
+      font-family: "Poppins", sans-serif;
+      background-image: url("Gradient-background.gif");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 200px;
+      padding-top: 50px;
+
+    }
+
+    .todo-container {
+      background: #f5eb97;
+      width: 400px;
+      padding: 25px;
+      border-radius: 19px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #8306e9;
+      margin-bottom: 80px;
+
+    }
+
+    .input-area {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      border: 2px solid #f30f0f;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+     button {
+      background: #f806f0;
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #08bae7;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f9fafc;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      transition: background 0.3s;
+    }
+
+    li.completed span {
+      text-decoration: line-through;
+      color: #999;
+    }
+
+    .actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .actions button {
+      background: none;
+      border: none;
+      color: #777;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .actions button:hover {
+      color: #000;
+    }
+
