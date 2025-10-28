@@ -3,7 +3,24 @@
     const addBtn = document.getElementById("addBtn");
     const taskList = document.getElementById("taskList");
 
-    // Load tasks from localStorage
+
+ const modeBtn = document.querySelector("#mode");
+    const currMode= "Light";
+    const body=document.querySelector("body");
+
+    modeBtn.addEventListener("click",function(){
+      if(currMode==="Light"){
+        currMode="Dark";
+        body.classList.add("dark-mode");
+        modeBtn.innerText="Light Mode";
+      }
+      else{
+        currMode="Light";
+        body.classList.remove("dark-mode");
+        modeBtn.innerText="dark Mode";
+      }
+    });
+
     document.addEventListener("DOMContentLoaded", loadTasks);
 
     addBtn.addEventListener("click", addTask);
